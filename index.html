@@ -202,19 +202,6 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .resume-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .resume-text {
-        text-align: center;
-    }
-}
-
-
-
 
 /* Skills Section */
 #skill {
@@ -305,96 +292,6 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-
-
-
-#instructors {
-    padding: 50px 20px;
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-    background-color: #1e1b4b;
-}
-
-.title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 30px;
-    background: linear-gradient(90deg, #b06ab3, #4568dc);
-    
-}
-
-/* Instructor Container */
-.instructor-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-/* Individual Card */
-.instructor-card {
-    background: #1e1b4b;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.instructor-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.info {
-    padding: 15px;
-}
-
-.info h2 {
-    margin: 10px 0;
-    font-size: 1.4em;
-    color: #f3a683;
-}
-
-.info p {
-    font-size: 1em;
-    color: #c3c3c3;
-}
-
-/* Hover Effect */
-.instructor-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
-}
-
-/* Fade In Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-    .instructor-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 
 
 
@@ -502,7 +399,70 @@
         .footer-links a:hover {
             color: white;
         }
+@media only screen and (max-width: 948px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media only screen and (max-width: 1040px) {
+    #resume {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+
+    #skill {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 703px) {
+
+    #project {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    #instructors {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
 
 
 
